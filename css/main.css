@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+header {
+    background-color: #b8b8b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    padding-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header p {
+    font-size: 40px;
+}
+
+.name {
+    color: #5068A9;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu p {
+    cursor: pointer;
+}
+
+.menu p:hover {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 300;
+    color: #5068A9;
+}
+
+.container .content {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.image-container .image {
+    height: 100%;
+    background-size: cover;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ededed;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+footer .footer-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-container .footer-social-menus {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lucide {
+    stroke: #000000;
+}
+
+.lucide:hover {
+    stroke: #ec137f;
+}
+
+@media (max-width: 500px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 15px 30px;
+        padding-top: 50px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .content {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
